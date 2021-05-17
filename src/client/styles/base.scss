@@ -1,0 +1,38 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #fcbf49;
+$secondary-color: #6d6875;
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 2;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+    h1 {
+        text-align: center;
+        font: 120% $font-stack;
+        color: $primary-color;
+        font-weight: bolder;
+    }
+    div {
+        color: $secondary-color;
+        p {
+            font-weight: bolder;
+        }
+        span {
+            font-weight: normal;
+        }
+    };
+    div#error {
+        color: $primary-color;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+}

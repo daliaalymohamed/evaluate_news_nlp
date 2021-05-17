@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Evaluate News</title>
+        <link rel="stylesheet" type="text/css" href="/styles/resets.scss">
+        <link rel="stylesheet" type="text/css" href="/styles/base.scss">
+        <link rel="stylesheet" type="text/css" href="/styles/header.scss">
+        <link rel="stylesheet" type="text/css" href="/styles/form.scss">
+        <link rel="stylesheet" type="text/css" href="/styles/footer.scss">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Natural Language Processing</h1>
+            <div>
+                Login
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <h1>Type a link of an article to analyze using "Natural Language Processing"</h1>
+            </section>
+            <section>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="url" type="text" name="url" value="" placeholder="Type a Url">
+                    <input type="submit" name="" value="Submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                </form>
+            </section>
+
+            <section>
+                <div id="polarity"></div>
+                <div id="agreement"></div>
+                <div id="subjectivity"></div>
+                <div id="confidence"></div>
+                <div id="irony"></div>
+                <div id="error"></div>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <h3>Evaluate News & Articles with Natural Language Processing</h3>
+                <p>Udacity &copy; 2021</p>
+            </div>
+        </footer>
+            
+
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+
+    </body>
+</html>

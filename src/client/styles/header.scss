@@ -1,0 +1,16 @@
+$font_weightness: bolder;
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background: #6d6875;
+    color: #e7e7e7;
+    h1{
+        padding: 20px;
+        font-weight: $font_weightness;
+    }
+    div {
+        font-weight: $font_weightness;
+        padding: 20px;
+    }
+}
