@@ -3,7 +3,7 @@ Evaluate A News Article with Natural Language Processing
 This project aims to build a web tool that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites. When a user submits a URL of an article, the web page then displays sentiment analysis returned from meaningcloud API, based on the contents of the article.
 
 ### Build Tools Used
-=============
+-----
 HTML
 Sass
 Java Script
@@ -15,7 +15,7 @@ Meaning Cloud API
 Service Workers
 
 ### Getting started
-=============
+-----
 First of all, you have to install node and npm , then create project directory and move to it.
 
 `$ cd <project_directory>`
@@ -29,7 +29,7 @@ Install the dependencies
 `$ npm install`
 
 ### Choose the necessary installation for your development mode
-=============
+-----
 - [ ] npm i -D @babel/core@^7.14.0 @babel/preset-env@^7.14.1 babel-loader@^8.2.2
 - [ ] npm i -D style-loader@^0.23.1 node-sass@^4.14.1 css-loader@^3.6.0 sass-loader@^7.3.1
 - [ ] npm i -D clean-webpack-plugin@^3.0.0
@@ -41,11 +41,11 @@ Install the dependencies
 
 
 ### Setting up for an API KEY
-=============
+-----
 First, you have to sign up , then you get your api key.
 
 ### Environment variables configuration
-=============
+-----
 - [ ] Use npm or yarn to install the dotenv package ```npm install dotenv```. This will allow us to use environment variables we set in a new file
 - [ ] Create a new ```.env``` file in the root of your project
 - [ ] Create .gitignore file in the root of your project and add ```.env``` - this will make sure that we don't push our environment variables to Github! If you forget this step, all of the work we did to protect our API keys was pointless.
@@ -65,7 +65,7 @@ dotenv.config();
 console.log(`Your API key is ${process.env.API_KEY}`);
 ```
 ### Use your API
-=============
+-----
 This is the base url for the sentiment analysis api :
 https://api.meaningcloud.com/sentiment-2.1
 
@@ -77,7 +77,7 @@ don't forget to add those params to the url :
 - [ ] The model
 
 ### Start the project
-=============
+-----
 Open two terminals , one for the server and the other for building the project
 
 ```
