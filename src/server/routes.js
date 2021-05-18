@@ -10,8 +10,8 @@ var fetch = require('node-fetch'); // fetch
 
 // main routes
 router.get('/', (req, res) => {
-    res.sendFile('src/client/index.html')
-    //res.sendFile('dist/index.html')
+    // res.sendFile('src/client/index.html')
+    res.sendFile('dist/index.html')
 })
 router.post('/add_url', (req, res) => {
     const BASE_URL = process.env.BASE_URL
